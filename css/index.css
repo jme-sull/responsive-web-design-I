@@ -89,8 +89,6 @@ nav {
 
 a {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: grey;
   text-decoration: none;
 
@@ -275,6 +273,11 @@ nav img {
 
 @media(max-width: 500px){
 
+	.container {
+
+		width: 100%; 
+	}
+
 	.top-content {
 		flex-direction: column;
 	}
@@ -290,6 +293,39 @@ nav img {
 	.bottom-content div {
 		width: 100%;
 	}
+
+	nav {
+
+		flex-direction: column-reverse; 
+		
+	}
+
+	nav a {
+
+		
+		border-bottom: 1px solid grey;
+		width: 100%; 
+		padding: 20px;
+		flex-direction: column-reverse;
+		text-align: center;
+		margin: 0, auto;
+		font-weight: bold;
+		color:  grey;
+		
+		
+	}
+
+	nav :nth-child(6) {
+
+		border-top: 1px solid grey;
+	}
+
+
+
+
+	
+
+	
 
 
 	
