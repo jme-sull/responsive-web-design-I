@@ -1,3 +1,342 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+
+h1{
+	font-size: 70px;
+
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	
+	
+		  
+}	
+
+
+a {
+  display: flex;
+  color: grey;
+  text-decoration: none;
+
+
+}
+
+nav img {
+
+	display: flex;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+
+.container {
+	width: 70%;
+	height: 90%;
+	margin: auto;
+	
+}
+
+
+
+
+.header-box {
+
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1%;
+	padding: 50px;
+	border-bottom: solid black 1px; 
+	
+
+	
+}
+
+.header-box div {
+	
+	width: 300px;
+}
+
+
+
+.button{
+
+	display: block;
+	border: solid black 2px; 
+    width: fit-content;
+    font-size: 15px;
+    margin-top: 15px;
+    font: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+		
+		
+		
+		
+	
+	}
+
+.top-content{
+	display: flex;
+	justify-content: space-between;
+    
+
+}
+
+.top-content div {
+    width: 45%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.CTA {
+	text-align: center;
+}
+
+
+.bottom-content{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid black 1px; 
+	
+	
+}
+
+.bottom-content div{
+
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+
+.middle-img{
+
+    display: block;
+    margin: 0 auto; 
+    width: 98%;
+
+
+}
+
+.copyright {
+	text-align: center;
+}
+
+
+.flex-container {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0, auto;
+	border: solid black 1px;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 90%;
+
+
+}
+
+.flexitem {
+
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+	padding: 20px; 
+	background: lightgrey;
+	margin-bottom: 20px;
+	
+}
+
+.flexitem button {
+
+	border: solid black 2px; 
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+    font: inherit;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.services-header-img {
+
+		display: block;
+		margin: 0, auto; 	
+}
+
+.bottom-flex-box {
+
+	display: flex;
+	
+}
+
+@media(max-width: 800px) {
+
+	.header-box img{
+
+		display: none; 
+	}
+
+	nav {
+
+		flex-wrap: wrap-reverse;
+
+	}
+
+@media(max-width: 500px){
+
+	.container {
+
+		width: 100%; 
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.top-content div {
+		width: 100%;
+	}
+	
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content div {
+		width: 100%;
+	}
+
+	nav {
+
+		flex-direction: column-reverse; 
+		
+	}
+
+	nav a {
+
+		
+		border-bottom: 1px solid grey;
+		width: 100%; 
+		padding: 20px;
+		flex-direction: column-reverse;
+		text-align: center;
+		margin: 0, auto;
+		font-weight: bold;
+		color: grey;
+		
+		
+	}
+
+	nav :nth-child(6) {
+
+		border-top: 1px solid grey;
+	}
+
+
+
+
+	
+
+	
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+}
